@@ -29,32 +29,39 @@ date1.txt\
 time1.txt\
 datetime1.txt\
 ***Example Output:***\
-AABBCC is a valid hex color code\
-ZZ9900 is not a valid hex color code\
-001122 is a valid hex color code\
-00HH33 is not a valid hex color code\
-AA99FF is a valid hex color code\
-123456 is a valid hex color code\
-#$!@%& is not a valid hex color code\
-ABCDEF is a valid hex color code\
-ABCDHH is not a valid hex color code\
-ABCDE is not a valid hex color code\
-0-1+2/ is not a valid hex color code\
+01/02/03 is a valid date\
+13/24/99 is not a valid date\
+6-8-1999 is a valid date\
+01-02-2003 is a valid date\
+5/20/15 is a valid date\
+07-43-19 is not a valid date\
+07/03/1988 is a valid date\
+ab-cd-ef is not a valid date\
+11/1/1990 is a valid date\
+9-15-05 is a valid date\
+12-04-12 is a valid date\
+9/2/230 is not a valid date\
 \
-(123) 456-7890 is a valid phone number\
-123 456 7890 is not a valid phone number\
-(123) 45-7890 is not a valid phone number\
-1234567890 is a valid phone number\
-123456789 is not a valid phone number\
-(123) 456 7890 is not a valid phone number\
-123-456-7890 is a valid phone number\
-23-456-7890 is not a valid phone number\
-123-4456-7890 is not a valid phone number\
+12:57 is a valid time\
+25:32 is not a valid time\
+3:43 AM is a valid time\
+3:63 is not a valid time\
+19:23 is a valid time\
+7:43 XM is not a valid time\
+19:23 AM is not a valid time\
+12:3 is a not valid time\
+5:55 is a valid time\
+01:23 PM is a valid time\
 \
-abcdef@abc.com is a valid email address\
-abc!@#abc.d is not a valid email address\
-#$%@abc.com is not a valid email address\
-fedcba@fed.org is a valid email address\
-abcdef@&*().com is not a valid email address\
-abcdef@abc.123 is not a valid email address\
-mail@mail.mail is a valid email address
+01/02/03 12:57 is a valid datetime\
+13/24/99 3:43 AM is not a valid datetime\
+25:32 6-8-1999 is not a valid datetime\
+01-02-2003 19:23 is a valid datetime\
+5/20/15 7:43 XM is not a valid datetime\
+07-43-19 3:63 is not a valid datetime\
+07/03/1988 5:55 is a valid datetime\
+ab-cd-ef 19:23 AM is not a valid datetime\
+11/1/1990 5:55 is a valid datetime\
+9-15-05 5:55 is a valid datetime\
+12-04-12 01:23 PM is a valid datetime\
+9/2/230 12:3 is not a valid datetime\
