@@ -1,26 +1,28 @@
-# Regex Basics
+# Regex Date/Time
 
-## Due: Tue 2/21 at 11:59 PM
+## Due: Tue 2/28 at 11:59 PM
 
-- Create a program called `RegexBasics.java`
-- Prompt the user for a filename containing hexadecimal color codes
-- Prompt the user for a filename containing phone numbers
-- Prompt the user for a filename containing email addresses
-- Read in all the lines from the hex color codes file into an ArrayList
-- Read in all the lines from the phone numbers file into another ArrayList
-- Read in all the lines from the email addresses file into another ArrayList
-- Print whether each hex color code is a valid hex color code or not
-  - A hex color code is valid if it contains only 0 through 9 and A through F for each of the six digits
-- Print whether each phone number is a valid phone number or not
-  - A phone number is valid if it follows any of the following formats where # is a digit
-    - (###) ###-####
-    - ###-###-####
-    - ##########
-- Print whether each email address is a valid email address or not
-  - An email address is valid if it follows the format username@domain.extension with the following being true
-    - username contains only alphanumeric characters, dots, dashes, and underscores
-    - domain contains only alphanumeric characters and dashes
-    - extension is two to four letters
+- Create a program called `RegexDateTime.java`
+- Prompt the user for a filename containing dates
+- Prompt the user for a filename containing times
+- Prompt the user for a filename containing datetimes
+- Read in all the lines from the dates file into an ArrayList
+- Read in all the lines from the times file into another ArrayList
+- Read in all the lines from the datetimes file into another ArrayList
+- Print whether each date is a valid date or not
+  - A date is valid if it follows any of the following formats where months and days can have leading zeroes or not
+    - MM-DD-YYYY
+    - MM/DD/YYYY
+    - MM-DD-YY
+    - MM/DD/YY
+- Print whether each time is a valid time or not
+  - A time is valid if it follows any of the following formats where # is a digit and follows either military time or standard time
+    - ##:##
+    - ##:## AM (not valid if time is in military time)
+    - ##:## PM (not valid if time is in military time)
+- Print whether each datetime is a valid datetime or not
+  - A datetime is valid if it follows the format for date and time
+    - A datetime can have the date then the time or the time then the date
 
 ***Example Input:***\
 hex1.txt\
