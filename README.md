@@ -10,13 +10,13 @@
 - Read in all the lines from the times file into another ArrayList
 - Read in all the lines from the datetimes file into another ArrayList
 - Print whether each date is a valid date or not
-  - A date is valid if it follows any of the following formats where months and days can have leading zeroes or not
+  - A date is valid if it follows any of the following formats where months and days can have leading zeroes or not and each number is valid for that field
     - MM-DD-YYYY
     - MM/DD/YYYY
     - MM-DD-YY
     - MM/DD/YY
 - Print whether each time is a valid time or not
-  - A time is valid if it follows any of the following formats where # is a digit and follows either military time or standard time
+  - A time is valid if it follows any of the following formats where # is a digit and follows either military time or standard time and each number is valid for that field
     - ##:##
     - ##:## AM (not valid if time is in military time)
     - ##:## PM (not valid if time is in military time)
