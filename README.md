@@ -49,7 +49,7 @@ ab-cd-ef is not a valid date\
 19:23 is a valid time\
 7:43 XM is not a valid time\
 19:23 AM is not a valid time\
-12:3 is a not valid time\
+12:3 is not a valid time\
 5:55 is a valid time\
 01:23 PM is a valid time\
 \
