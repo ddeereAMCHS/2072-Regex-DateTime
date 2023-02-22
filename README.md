@@ -16,7 +16,7 @@
     - MM-DD-YY
     - MM/DD/YY
 - Print whether each time is a valid time or not
-  - A time is valid if it follows any of the following formats where # is a digit and follows either military time or standard time and each number is valid for that field
+  - A time is valid if it follows any of the following formats where # is a digit, follows either military time or standard time, and each number is valid for that field (hours can have a leading zero or not)
     - ##:##
     - ##:## AM (not valid if time is in military time)
     - ##:## PM (not valid if time is in military time)
