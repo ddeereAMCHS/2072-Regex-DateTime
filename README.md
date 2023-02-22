@@ -25,9 +25,9 @@
     - A datetime can have the date then the time or the time then the date
 
 ***Example Input:***\
-hex1.txt\
-phone1.txt\
-email1.txt\
+date1.txt\
+time1.txt\
+datetime1.txt\
 ***Example Output:***\
 AABBCC is a valid hex color code\
 ZZ9900 is not a valid hex color code\
