@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Test 1",
+      "setup": "javac RegexBasics.java",
+      "run": "java RegexBasics",
+      "input": "hex1.txt\r\nphone1.txt\r\nemail1.txt",
+      "output": "AABBCC is a valid hex color code\r\nZZ9900 is not a valid hex color code\r\n001122 is a valid hex color code\r\n00HH33 is not a valid hex color code\r\nAA99FF is a valid hex color code\r\n123456 is a valid hex color code\r\n#$!@%& is not a valid hex color code\r\nABCDEF is a valid hex color code\r\nABCDHH is not a valid hex color code\r\nABCDE is not a valid hex color code\r\n0-1+2/ is not a valid hex color code\r\n\r\n(123) 456-7890 is a valid phone number\r\n123 456 7890 is not a valid phone number\r\n(123) 45-7890 is not a valid phone number\r\n1234567890 is a valid phone number\r\n123456789 is not a valid phone number\r\n(123) 456 7890 is not a valid phone number\r\n123-456-7890 is a valid phone number\r\n23-456-7890 is not a valid phone number\r\n123-4456-7890 is not a valid phone number\r\n\r\nabcdef@abc.com is a valid email address\r\nabc!@#abc.d is not a valid email address\r\n#$%@abc.com is not a valid email address\r\nfedcba@fed.org is a valid email address\r\nabcdef@&*().com is not a valid email address\r\nabcdef@abc.123 is not a valid email address\r\nmail@mail.mail is a valid email address",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Test 2",
+      "setup": "javac RegexBasics.java",
+      "run": "java RegexBasics",
+      "input": "hex2.txt\r\nphone2.txt\r\nemail2.txt",
+      "output": "QWERTY is not a valid hex color code\r\n800000 is a valid hex color code\r\n0WASD0 is not a valid hex color code\r\n808080 is a valid hex color code\r\n00000000 is not a valid hex color code\r\n654321 is a valid hex color code\r\nAAAAAAAA is not a valid hex color code\r\n\r\n(123) 456-7890 is a valid phone number\r\n(abc) def-ghij is not a valid phone number\r\n123-789-4560 is a valid phone number\r\nabcdefghij is not a valid phone number\r\n1234567890 is a valid phone number\r\n12345678909 is not a valid phone number\r\nabc-def-ghij is not a valid phone number\r\n979-979-9779 is a valid phone number\r\n1234-123-1234 is not a valid phone number\r\n(...) ...-.... is not a valid phone number\r\n\r\nabc@abc.com is a valid email address\r\n@abc.com is not a valid email address\r\nabc.def@abc-def.com is a valid email address\r\nabc_def@abcdef.com is a valid email address\r\nabc@abc is not a valid email address\r\nabcdef@abc-def.com is a valid email address\r\nabc@abc.defgh is not a valid email address\r\nabc@.com is not a valid email address\r\nabc-def@abcdef.com is a valid email address",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
