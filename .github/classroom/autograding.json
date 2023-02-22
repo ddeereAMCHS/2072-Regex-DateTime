@@ -2,20 +2,10 @@
   "tests": [
     {
       "name": "Test 1",
-      "setup": "javac RegexBasics.java",
-      "run": "java RegexBasics",
-      "input": "hex1.txt\r\nphone1.txt\r\nemail1.txt",
-      "output": "AABBCC is a valid hex color code\r\nZZ9900 is not a valid hex color code\r\n001122 is a valid hex color code\r\n00HH33 is not a valid hex color code\r\nAA99FF is a valid hex color code\r\n123456 is a valid hex color code\r\n#$!@%& is not a valid hex color code\r\nABCDEF is a valid hex color code\r\nABCDHH is not a valid hex color code\r\nABCDE is not a valid hex color code\r\n0-1+2/ is not a valid hex color code\r\n\r\n(123) 456-7890 is a valid phone number\r\n123 456 7890 is not a valid phone number\r\n(123) 45-7890 is not a valid phone number\r\n1234567890 is a valid phone number\r\n123456789 is not a valid phone number\r\n(123) 456 7890 is not a valid phone number\r\n123-456-7890 is a valid phone number\r\n23-456-7890 is not a valid phone number\r\n123-4456-7890 is not a valid phone number\r\n\r\nabcdef@abc.com is a valid email address\r\nabc!@#abc.d is not a valid email address\r\n#$%@abc.com is not a valid email address\r\nfedcba@fed.org is a valid email address\r\nabcdef@&*().com is not a valid email address\r\nabcdef@abc.123 is not a valid email address\r\nmail@mail.mail is a valid email address",
-      "comparison": "included",
-      "timeout": 10,
-      "points": null
-    },
-    {
-      "name": "Test 2",
-      "setup": "javac RegexBasics.java",
-      "run": "java RegexBasics",
-      "input": "hex2.txt\r\nphone2.txt\r\nemail2.txt",
-      "output": "QWERTY is not a valid hex color code\r\n800000 is a valid hex color code\r\n0WASD0 is not a valid hex color code\r\n808080 is a valid hex color code\r\n00000000 is not a valid hex color code\r\n654321 is a valid hex color code\r\nAAAAAAAA is not a valid hex color code\r\n\r\n(123) 456-7890 is a valid phone number\r\n(abc) def-ghij is not a valid phone number\r\n123-789-4560 is a valid phone number\r\nabcdefghij is not a valid phone number\r\n1234567890 is a valid phone number\r\n12345678909 is not a valid phone number\r\nabc-def-ghij is not a valid phone number\r\n979-979-9779 is a valid phone number\r\n1234-123-1234 is not a valid phone number\r\n(...) ...-.... is not a valid phone number\r\n\r\nabc@abc.com is a valid email address\r\n@abc.com is not a valid email address\r\nabc.def@abc-def.com is a valid email address\r\nabc_def@abcdef.com is a valid email address\r\nabc@abc is not a valid email address\r\nabcdef@abc-def.com is a valid email address\r\nabc@abc.defgh is not a valid email address\r\nabc@.com is not a valid email address\r\nabc-def@abcdef.com is a valid email address",
+      "setup": "javac RegexDateTime.java",
+      "run": "java RegexDateTime",
+      "input": "date1.txt\r\ntime1.txt\r\ndatetime1.txt",
+      "output": "01/02/03 is a valid date\r\n13/24/99 is not a valid date\r\n6-8-1999 is a valid date\r\n01-02-2003 is a valid date\r\n5/20/15 is a valid date\r\n07-43-19 is not a valid date\r\n07/03/1988 is a valid date\r\nab-cd-ef is not a valid date\r\n11/1/1990 is a valid date\r\n9-15-05 is a valid date\r\n12-04-12 is a valid date\r\n9/2/230 is not a valid date\r\n\r\n12:57 is a valid time\r\n25:32 is not a valid time\r\n3:43 AM is a valid time\r\n3:63 is not a valid time\r\n19:23 is a valid time\r\n7:43 XM is not a valid time\r\n19:23 AM is not a valid time\r\n12:3 is a not valid time\r\n5:55 is a valid time\r\n01:23 PM is a valid time\r\n\r\n01/02/03 12:57 is a valid datetime\r\n13/24/99 3:43 AM is not a valid datetime\r\n25:32 6-8-1999 is not a valid datetime\r\n01-02-2003 19:23 is a valid datetime\r\n5/20/15 7:43 XM is not a valid datetime\r\n07-43-19 3:63 is not a valid datetime\r\n07/03/1988 5:55 is a valid datetime\r\nab-cd-ef 19:23 AM is not a valid datetime\r\n11/1/1990 5:55 is a valid datetime\r\n9-15-05 5:55 is a valid datetime\r\n12-04-12 01:23 PM is a valid datetime\r\n9/2/230 12:3 is not a valid datetime",
       "comparison": "included",
       "timeout": 10,
       "points": null
