@@ -64,4 +64,4 @@ ab-cd-ef 19:23 AM is not a valid datetime\
 11/1/1990 5:55 is a valid datetime\
 9-15-05 5:55 is a valid datetime\
 12-04-12 01:23 PM is a valid datetime\
-9/2/230 12:3 is not a valid datetime\
+9/2/230 12:3 is not a valid datetime
