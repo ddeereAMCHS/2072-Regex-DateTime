@@ -1,6 +1,6 @@
 # Regex Date/Time
 
-## Due: Tue 2/28 at 11:59 PM
+## Due: Fri 2/23 at 11:59 PM
 
 - Create a program called `RegexDateTime.java`
 - Prompt the user for a filename containing dates
